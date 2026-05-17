@@ -1,0 +1,52 @@
+{
+  "name": "@glasseye/cli",
+  "version": "1.0.0",
+  "description": "Glasseye AI Security Intelligence CLI - Context-aware vulnerability scanning and automated remediation",
+  "main": "dist/index.js",
+  "bin": {
+    "glasseye": "./bin/glasseye.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node bin/glasseye.js",
+    "test": "echo \"Tests coming soon\" && exit 0",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "security",
+    "vulnerability",
+    "scanner",
+    "ai",
+    "cve",
+    "npm-audit",
+    "security-intelligence",
+    "automated-remediation",
+    "glasseye",
+    "devsecops"
+  ],
+  "author": "Glasseye AI <hello@glasseye.ai>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glasseye-ai/glasseye-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/glasseye-ai/glasseye-cli/issues"
+  },
+  "homepage": "https://glasseye.ai",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "ora": "^5.4.1",
+    "boxen": "^5.1.2",
+    "semver": "^7.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/semver": "^7.5.6",
+    "typescript": "^5.3.3"
+  }
+}
